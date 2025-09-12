@@ -61,21 +61,43 @@
       </div>
     </div>
   </section>
+  <section class="offers" id="offers">
+  <h2>Special Offers</h2>
+  <div class="offers-grid">
+    <div class="offer-card">
+      <h3>🔥 Buy 1 Get 1 Free</h3>
+      <p>Every Wednesday on all Classic Cheeseburgers.</p>
+    </div>
+    <div class="offer-card">
+      <h3>🍟 Free Fries</h3>
+      <p>Get free fries with every Veggie Delight combo.</p>
+    </div>
+    <div class="offer-card">
+      <h3>🥤 Family Feast</h3>
+      <p>Order 3 burgers & get 2 soft drinks absolutely free.</p>
+    </div>
+    <div class="offer-card">
+      <h3>🎉 Weekend Special</h3>
+      <p>Flat 20% off on all BBQ Burgers this weekend.</p>
+    </div>
+  </div>
+</section>
 
   <section class="reservations" id="reservations">
-    <div class="reservation-form">
-      <h2>Make a Reservation</h2>
-      <form>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="tel" name="phone" placeholder="Phone Number" required>
-        <input type="date" name="date" required>
-        <input type="time" name="time" required>
-        <textarea name="message" placeholder="Additional Message" rows="5"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </section>
+  <h2>Make a Reservation</h2>
+  <button class="accordion-btn">Click to Reserve</button>
+  <div class="reservation-form collapse">
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <textarea name="message" placeholder="Additional Message" rows="5"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
 
   <section class="testimonials">
     <h2>What Our Customers Say</h2>
@@ -110,30 +132,17 @@
   </section>
 
   <section class="contact" id="contact">
-    <div class="contact-container">
-      <h2>Contact Us</h2>
-      <div class="contact-info">
-        <div class="info-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <p>123 Main Street, City, Country</p>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-phone-alt"></i>
-          <p>+1 234 567 890</p>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-envelope"></i>
-          <p>info@burgerhut.com</p>
-        </div>
-      </div>
-      <form class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <button class="accordion-btn">Click to Contact</button>
+    <div class="contact-form collapse">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
     </div>
-  </section>
+  </div>
+</section>
 
   <footer class="footer">
     <div class="footer-content">
@@ -157,5 +166,13 @@
     </div>
     <p class="footer-text">&copy; 2023 Burger Hut. All rights reserved.</p>
   </footer>
+  <script>
+  document.querySelectorAll('.accordion-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const form = btn.nextElementSibling;
+      form.classList.toggle('active');
+    });
+  });
+</script>
 </body>
 </html>

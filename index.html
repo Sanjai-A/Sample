@@ -1,177 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Burger Hut</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-  <!-- Header -->
   <header>
     <div class="logo">
-      <img src="hero-background1.jpg" alt="Logo" />
+      <img src="iconlogo.png" alt="Berger Hut Logo">
     </div>
     <nav>
       <ul>
-        <li><a href="#hero">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#menu">Menu</a></li>
-        <li><a href="#offers">Offers</a></li>
         <li><a href="#reservations">Reservations</a></li>
-        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
+  <section class="hero" id="home">
     <div class="hero-content">
       <h1>Welcome to Burger Hut</h1>
-      <p>Delicious, juicy burgers made fresh for you.</p>
-      <a href="#menu" class="btn">Explore Menu</a>
+      <p>Experience the Taste of Perfection</p>
+      <a href="#menu" class="btn">Explore Our Menu</a>
     </div>
   </section>
 
-  <!-- About -->
   <section class="about dark-theme" id="about">
     <div class="about-content">
-      <h2>About Us</h2>
-      <p>
-        At Burger Hut, we serve handcrafted burgers with fresh ingredients and
-        bold flavors. Perfect for families, friends, and food lovers!
-      </p>
-      <p>
-        Our team ensures quality with every bite — from our soft buns to our
-        signature sauces.
-      </p>
+      <h2>About Burger Hut</h2>
+      <p>Experience the finest gourmet burgers in a cozy and rustic atmosphere. At Burger Hut, we are dedicated to delivering exceptional flavors that will tantalize your taste buds.</p>
+      <p>Our chefs meticulously craft each burger using locally sourced ingredients and unique flavor combinations. From juicy beef patties to mouthwatering vegetarian options, there's something for everyone.</p>
+      <a href="#menu" class="btn">Explore Our Menu</a>
     </div>
     <div class="about-image">
-      <img src="hero-background1.jpg" alt="About Burgers" />
+      <img src="about-image.jpg" alt="About Image">
     </div>
   </section>
 
-  <!-- Menu -->
   <section class="menu" id="menu">
     <h2>Our Menu</h2>
     <div class="menu-items">
       <div class="menu-item">
-        <img src="hero-background1.jpg" alt="Burger" />
-        <h3>Classic Burger</h3>
-        <p>Juicy beef patty with cheese, lettuce, tomato, and house sauce.</p>
+        <img src="burger1.jpg" alt="Burger 1">
+        <h3>Classic Cheeseburger</h3>
+        <p>A juicy beef patty topped with melted cheese, fresh lettuce, tomato, and our special sauce. Served with a side of crispy fries.</p>
       </div>
       <div class="menu-item">
-        <img src="hero-background1.jpg" alt="Burger" />
-        <h3>Cheese Lover</h3>
-        <p>Loaded with melted cheese and a special creamy dressing.</p>
+        <img src="burger2.jpg" alt="Burger 2">
+        <h3>Veggie Delight</h3>
+        <p>A delicious veggie patty made from a blend of fresh vegetables and spices. Topped with avocado, sprouts, and tangy mayo. Served with a side of sweet potato fries.</p>
       </div>
       <div class="menu-item">
-        <img src="hero-background1.jpg" alt="Burger" />
-        <h3>Spicy Delight</h3>
-        <p>A fiery burger with jalapeños and chili mayo for spice fans.</p>
+        <img src="burger3.jpg" alt="Burger 3">
+        <h3>Spicy BBQ Burger</h3>
+        <p>A fiery burger packed with flavor! Grilled chicken breast smothered in spicy BBQ sauce, topped with jalapenos, crispy onion rings, and chipotle mayo. Served with a side of coleslaw.</p>
       </div>
     </div>
   </section>
 
-  <!-- Offers -->
-  <section class="offers" id="offers">
-    <h2>Special Offers</h2>
-    <div class="offer-cards">
-      <div class="offer-card">
-        <h3>🔥 Combo Meal</h3>
-        <p>Burger + Fries + Drink at just <b>₹199</b></p>
-      </div>
-      <div class="offer-card">
-        <h3>🎉 Buy 1 Get 1</h3>
-        <p>On selected burgers every Friday!</p>
-      </div>
-      <div class="offer-card">
-        <h3>🥤 Free Drink</h3>
-        <p>With any family pack order above <b>₹499</b></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Reservations -->
   <section class="reservations" id="reservations">
-    <div class="reservation-form collapsed">
-      <h2>Reserve Your Table</h2>
+    <div class="reservation-form">
+      <h2>Make a Reservation</h2>
       <form>
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
-        <input type="date" required />
-        <input type="time" required />
-        <textarea placeholder="Special Requests"></textarea>
-        <button type="submit">Book Now</button>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+        <textarea name="message" placeholder="Additional Message" rows="5"></textarea>
+        <button type="submit">Submit</button>
       </form>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-container">
-      <div class="faq-item">
-        <h3>Do you offer home delivery?</h3>
-        <p>Yes! We deliver through all major delivery partners.</p>
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+      <img src="customer1.jpg" alt="Customer 1">
+      <p>"The burgers at Burger Hut are simply amazing! The flavors are rich, and the ingredients are always fresh. It's my go-to place whenever I'm craving a delicious meal."</p>
+      <h4>John Doe</h4>
+    </div>
+    <div class="testimonial">
+      <img src="customer2.jpg" alt="Customer 2">
+      <p>"Burger Hut never disappoints! The quality of their burgers and the friendly service make it a top-notch dining experience. I highly recommend it to all burger lovers!"</p>
+      <h4>Jane Smith</h4>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="gallery1.jpg" alt="Image 1">
       </div>
-      <div class="faq-item">
-        <h3>Are there vegetarian options?</h3>
-        <p>Absolutely. We have multiple veggie burgers and sides.</p>
+      <div class="image-item">
+        <img src="gallery2.jpg" alt="Image 2">
       </div>
-      <div class="faq-item">
-        <h3>Do you accept online reservations?</h3>
-        <p>Yes, just use our online reservation form above.</p>
+      <div class="image-item">
+        <img src="gallery3.jpg" alt="Image 3">
+      </div>
+      <div class="image-item">
+        <img src="gallery4.jpg" alt="Image 4">
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
   <section class="contact" id="contact">
     <div class="contact-container">
       <h2>Contact Us</h2>
       <div class="contact-info">
         <div class="info-item">
-          <i>📍</i>
-          <p>123 Burger Street, City</p>
+          <i class="fas fa-map-marker-alt"></i>
+          <p>123 Main Street, City, Country</p>
         </div>
         <div class="info-item">
-          <i>📞</i>
-          <p>+91 9876543210</p>
+          <i class="fas fa-phone-alt"></i>
+          <p>+1 234 567 890</p>
         </div>
         <div class="info-item">
-          <i>✉️</i>
+          <i class="fas fa-envelope"></i>
           <p>info@burgerhut.com</p>
         </div>
       </div>
       <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Message" required></textarea>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-logo">
-        <img src="hero-background1.jpg" alt="Footer Logo" />
+        <img src="iconlogo.png" alt="Logo">
       </div>
-      <div class="footer-links">
-        <a href="#hero">Home</a>
+      <nav class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
         <a href="#menu">Menu</a>
-        <a href="#offers">Offers</a>
-        <a href="#faq">FAQ</a>
-      </div>
+        <a href="#reservations">Reservations</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
       <div class="footer-social">
-        <a href="#">Facebook</a> | <a href="#">Instagram</a> |
-        <a href="#">Twitter</a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
-    <p class="footer-text">© 2025 Burger Hut. All rights reserved.</p>
+    <p class="footer-text">&copy; 2023 Burger Hut. All rights reserved.</p>
   </footer>
 </body>
 </html>

@@ -65,7 +65,9 @@
     </div>
   </section>
  
-  <section class="reservations" id="reservations">
+ <section class="reservations" id="reservations">
+  <button class="accordion-btn" onclick="toggleCollapse('reservationForm')">Make a Reservation</button>
+  <div id="reservationForm" class="collapse">
     <div class="reservation-form">
       <h2>Make a Reservation</h2>
       <form>
@@ -78,7 +80,9 @@
         <button type="submit">Submit</button>
       </form>
     </div>
-  </section>
+  </div>
+</section>
+
  
   <section class="testimonials">
     <h2>What Our Customers Say</h2>
@@ -113,6 +117,8 @@
   </section>
  
   <section class="contact" id="contact">
+  <button class="accordion-btn" onclick="toggleCollapse('contactForm')">Contact Us</button>
+  <div id="contactForm" class="collapse">
     <div class="contact-container">
       <h2>Contact Us</h2>
       <div class="contact-info">
@@ -136,7 +142,9 @@
         <button type="submit">Send Message</button>
       </form>
     </div>
-  </section>
+  </div>
+</section>
+
  <section class="faq" id="faq">
   <h2>Frequently Asked Questions</h2>
   <div class="faq-container">
@@ -246,5 +254,23 @@
     });
   });
 </script>
+<script>
+  function toggleCollapse(id) {
+    const section = document.getElementById(id);
+    section.classList.toggle("active");
+  }
+
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(q => {
+    q.addEventListener('click', () => {
+      const active = document.querySelector('.faq-answer.active');
+      if (active && active !== q.nextElementSibling) {
+        active.classList.remove('active');
+      }
+      q.nextElementSibling.classList.toggle('active');
+    });
+  });
+</script>
+
 </body>
 </html>

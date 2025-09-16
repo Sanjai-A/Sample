@@ -118,7 +118,7 @@
       <div class="contact-info">
         <div class="info-item">
           <i class="fas fa-map-marker-alt"></i>
-          <p>123 Main Street, City, Country</p>
+          <p>123 Main Street, Shollinganagar, Chennai</p>
         </div>
         <div class="info-item">
           <i class="fas fa-phone-alt"></i>
@@ -137,7 +137,62 @@
       </form>
     </div>
   </section>
- 
+ <section class="faq" id="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <button class="faq-question">1. What are your opening hours?</button>
+      <div class="faq-answer">
+        <p>We’re open daily from 11:00 AM to 11:00 PM.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">2. Do you offer vegetarian or vegan options?</button>
+      <div class="faq-answer">
+        <p>Yes! We have a wide range of vegetarian and vegan-friendly burgers and sides.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">3. Can I make a reservation online?</button>
+      <div class="faq-answer">
+        <p>Yes, you can reserve a table directly through our Reservations section on the website.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">4. Do you offer home delivery?</button>
+      <div class="faq-answer">
+        <p>Yes, we partner with popular food delivery apps to bring Burger Hut straight to your door.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">5. Are your ingredients locally sourced?</button>
+      <div class="faq-answer">
+        <p>We take pride in sourcing our ingredients from local farms and trusted suppliers.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">6. Do you have gluten-free options?</button>
+      <div class="faq-answer">
+        <p>Yes, gluten-free buns are available upon request with selected burgers.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">7. Do you host private events or parties?</button>
+      <div class="faq-answer">
+        <p>Absolutely! Contact us for customized party menus and private booking options.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-logo">
@@ -182,5 +237,14 @@
     src='https://co1730865281530.my.site.com/ESWCustomerSiteFAQ1758005788674/assets/js/bootstrap.min.js'
     onload='initEmbeddedMessaging()'>
   </script>
+  <script>
+  const questions = document.querySelectorAll('.faq-question');
+  questions.forEach(q => {
+    q.addEventListener('click', () => {
+      const answer = q.nextElementSibling;
+      answer.classList.toggle('active');
+    });
+  });
+</script>
 </body>
 </html>

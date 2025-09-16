@@ -3,141 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Burger Hut - Modern UI</title>
+  <title>Burger Hut</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- HEADER -->
+  <!-- Header -->
   <header class="header">
     <nav class="navbar">
-      <h1 class="logo">🍔 Burger Hut</h1>
+      <div class="logo">🍔 Burger Hut</div>
       <ul class="nav-links">
-        <li><a href="#menu">Menu</a></li>
         <li><a href="#offers">Offers</a></li>
-        <li><a href="#reservations">Reservations</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li><a href="#reservations">Reservations</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div class="hero">
-      <h2>Flame-Grilled Perfection</h2>
-      <p>Juicy burgers, crispy fries, and unforgettable flavors.</p>
-      <a href="#menu" class="btn">Explore Menu</a>
+      <h1>Fresh. Juicy. Delicious.</h1>
+      <p>Where every bite is happiness!</p>
+      <a href="#offers" class="btn">See Offers</a>
     </div>
   </header>
 
-  <!-- MENU SECTION -->
-  <section class="menu" id="menu">
-    <h2>Our Menu</h2>
+  <!-- Offers Section -->
+  <section id="offers" class="offers">
+    <h2>🔥 Today’s Special Offers</h2>
     <div class="card-container">
       <div class="card">
-        <img src="https://source.unsplash.com/400x300/?burger,cheese" alt="Cheese Burger">
-        <h3>Cheese Burger</h3>
-        <p>Loaded with cheese, lettuce & tomato.</p>
+        <img src="assets/burger1.jpg" alt="Burger">
+        <h3>Classic Burger</h3>
+        <p>Get it for just $5 today only!</p>
       </div>
       <div class="card">
-        <img src="https://source.unsplash.com/400x300/?burger,bacon" alt="Bacon Burger">
-        <h3>Bacon Burger</h3>
-        <p>Smoky bacon with our secret sauce.</p>
+        <img src="assets/burger2.jpg" alt="Burger">
+        <h3>Cheese Explosion</h3>
+        <p>Cheesy goodness for $6.99.</p>
       </div>
       <div class="card">
-        <img src="https://source.unsplash.com/400x300/?burger,vegan" alt="Vegan Delight">
-        <h3>Vegan Delight</h3>
-        <p>100% plant-based patty, guilt-free.</p>
+        <img src="assets/burger3.jpg" alt="Burger">
+        <h3>Family Combo</h3>
+        <p>2 burgers + 2 fries at $14.99.</p>
       </div>
     </div>
   </section>
 
-  <!-- OFFERS SECTION -->
-  <section class="offers" id="offers">
-    <h2>Hot Offers</h2>
-    <div class="card-container">
-      <div class="card offer">
-        <h3>Combo Meal</h3>
-        <p>1 Burger + Fries + Drink @ ₹199</p>
-      </div>
-      <div class="card offer">
-        <h3>Family Pack</h3>
-        <p>4 Burgers + 2 Large Fries @ ₹699</p>
-      </div>
-      <div class="card offer">
-        <h3>Student Deal</h3>
-        <p>Cheese Burger + Coke @ ₹99</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESERVATION SECTION -->
-  <section class="reservations" id="reservations">
-    <button class="accordion-btn" onclick="toggleCollapse('reservationForm')">Make a Reservation</button>
-    <div id="reservationForm" class="collapse">
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <input type="date" required>
-        <input type="time" required>
-        <textarea placeholder="Additional Message"></textarea>
-        <button type="submit" class="btn">Book Now</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- FAQ SECTION -->
-  <section class="faq" id="faq">
-    <h2>Frequently Asked Questions</h2>
+  <!-- FAQ Section -->
+  <section id="faq" class="faq">
+    <h2>❓ Frequently Asked Questions</h2>
     <div class="faq-container">
       <div class="faq-item">
-        <button class="faq-question">1. What are your opening hours?</button>
-        <div class="faq-answer"><p>We’re open daily from 11:00 AM to 11:00 PM.</p></div>
+        <button class="faq-question">Do you offer home delivery?</button>
+        <div class="faq-answer">
+          <p>Yes! We deliver within a 5km radius.</p>
+        </div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">2. Do you offer vegetarian options?</button>
-        <div class="faq-answer"><p>Yes! We have vegetarian and vegan-friendly burgers.</p></div>
+        <button class="faq-question">Are vegetarian options available?</button>
+        <div class="faq-answer">
+          <p>Absolutely! Try our Veggie Delight burger.</p>
+        </div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">3. Can I make a reservation online?</button>
-        <div class="faq-answer"><p>Yes, book a table directly on our website.</p></div>
+        <button class="faq-question">Can I reserve a table online?</button>
+        <div class="faq-answer">
+          <p>Yes, use our online reservation system below.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
-  <section class="contact" id="contact">
-    <button class="accordion-btn" onclick="toggleCollapse('contactForm')">Contact Us</button>
-    <div id="contactForm" class="collapse">
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+  <!-- Reservations Section -->
+  <section id="reservations" class="reservations">
+    <h2>📅 Make a Reservation</h2>
+    <button class="accordion-btn" onclick="toggleCollapse('reservationForm')">Open Reservation Form</button>
+    <div id="reservationForm" class="collapse">
+      <form class="reservation-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+        <textarea name="message" placeholder="Additional Message"></textarea>
+        <button type="submit">Book Now</button>
       </form>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>📞 Contact Us</h2>
+    <button class="accordion-btn" onclick="toggleCollapse('contactForm')">Open Contact Form</button>
+    <div id="contactForm" class="collapse">
+      <div class="contact-container">
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Chennai</p>
+          <p><i class="fas fa-phone-alt"></i> +91 9876543210</p>
+          <p><i class="fas fa-envelope"></i> info@burgerhut.com</p>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
     <p>© 2025 Burger Hut. All Rights Reserved.</p>
   </footer>
 
-  <!-- SCRIPT -->
-  <script>
-    function toggleCollapse(id) {
-      const section = document.getElementById(id);
-      section.classList.toggle("active");
-    }
-
-    const faqQuestions = document.querySelectorAll('.faq-question');
-    faqQuestions.forEach(q => {
-      q.addEventListener('click', () => {
-        const active = document.querySelector('.faq-answer.active');
-        if (active && active !== q.nextElementSibling) {
-          active.classList.remove('active');
-        }
-        q.nextElementSibling.classList.toggle('active');
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -3,6 +3,9 @@
 <head>
   <title>Burger Hut</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
  
 <body>
@@ -157,5 +160,27 @@
     </div>
     <p class="footer-text">&copy; 2023 Burger Hut. All rights reserved.</p>
   </footer>
+  <!-- 🔹 Chatbot Script goes here, before </body> -->
+  <script type='text/javascript'>
+    function initEmbeddedMessaging() {
+      try {
+        embeddedservice_bootstrap.settings.language = 'en_US';
+        embeddedservice_bootstrap.init(
+          '00DHp00000F8CzQ',   // Org ID
+          'Customer_Site_FAQ', // Deployment Name
+          'https://co1730865281530.my.site.com/ESWCustomerSiteFAQ1758005788674',
+          {
+            scrt2URL: 'https://co1730865281530.my.salesforce-scrt.com'
+          }
+        );
+      } catch (err) {
+        console.error('Error loading Embedded Messaging: ', err);
+      }
+    };
+  </script>
+  <script type='text/javascript'
+    src='https://co1730865281530.my.site.com/ESWCustomerSiteFAQ1758005788674/assets/js/bootstrap.min.js'
+    onload='initEmbeddedMessaging()'>
+  </script>
 </body>
 </html>

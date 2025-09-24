@@ -586,3 +586,18 @@ button:hover, .btn:hover {
   opacity: 1;
   transform: translateY(0);
 }
+/* Collapsible sections (Reservations + Contact) */
+.collapse {
+  display: none;
+}
+.collapse.active {
+  display: block;
+}
+
+/* FAQ Fix */
+.faq-answer {
+  display: none;
+}
+.faq-item.active .faq-answer {
+  display: block;
+}

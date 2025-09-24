@@ -529,3 +529,60 @@ button:hover, .btn:hover {
   opacity: 1;
   margin-top: 10px;
 }
+/* FAQ Section */
+.faq {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.faq h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 15px;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.faq-answer {
+  display: none;
+  font-size: 16px;
+  padding: 10px 0;
+  color: #ccc;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Scroll fade-in animation */
+.animate-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+.animate-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+}

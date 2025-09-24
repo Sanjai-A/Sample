@@ -29,7 +29,7 @@
   <!-- Hero -->
   <section class="hero" id="home">
     <div class="hero-content">
-      <h1>Serving Smiles, One Burger at a Time</h1>
+      <h1>Serving Smiles</h1>
       <p>Burger Hut offers gourmet burgers, event catering, and business partnerships crafted for flavor and convenience.</p>
       <div class="hero-buttons">
         <a href="#services" class="btn">Our Services</a>
@@ -312,7 +312,7 @@
     <div class="footer-content">
       <div class="footer-logo">
         <img src="iconlogo.png" alt="Logo">
-        <p>Premium Burger </p>
+        <p>Burger But </p>
       </div>
       <div class="footer-links">
         <div class="link-group">
@@ -336,89 +336,101 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2023 Burger Hut B2B Solutions. All rights reserved.</p>
+      <p>&copy; 2023 Burger Hut. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- JavaScript -->
+    <!-- JavaScript -->
   <script>
-    // FAQ functionality
-    document.querySelectorAll('.faq-question').forEach(button => {
-      button.addEventListener('click', () => {
-        const faqItem = button.parentElement;
-        const answer = faqItem.querySelector('.faq-answer');
-        
-        // Close all other FAQ items
-        document.querySelectorAll('.faq-item').forEach(item => {
-          if (item !== faqItem) {
-            item.classList.remove('active');
-            item.querySelector('.faq-answer').style.maxHeight = null;
+    // FAQ functionality - Fixed version
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize FAQ items
+      document.querySelectorAll('.faq-item').forEach(item => {
+        const answer = item.querySelector('.faq-answer');
+        answer.style.maxHeight = '0';
+        answer.style.overflow = 'hidden';
+        answer.style.transition = 'max-height 0.3s ease';
+      });
+
+      // FAQ click handlers
+      document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+          const faqItem = button.parentElement;
+          const answer = faqItem.querySelector('.faq-answer');
+          const isActive = faqItem.classList.contains('active');
+          
+          // Close all other FAQ items
+          document.querySelectorAll('.faq-item').forEach(item => {
+            if (item !== faqItem) {
+              item.classList.remove('active');
+              item.querySelector('.faq-answer').style.maxHeight = '0';
+            }
+          });
+          
+          // Toggle current FAQ item
+          if (!isActive) {
+            faqItem.classList.add('active');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          } else {
+            faqItem.classList.remove('active');
+            answer.style.maxHeight = '0';
           }
         });
-        
-        // Toggle current FAQ item
-        faqItem.classList.toggle('active');
-        if (faqItem.classList.contains('active')) {
-          answer.style.maxHeight = answer.scrollHeight + 'px';
-        } else {
-          answer.style.maxHeight = null;
-        }
       });
-    });
 
-    // Accordion buttons for service forms
-    document.querySelectorAll('.accordion-btn').forEach(button => {
-      button.addEventListener('click', () => {
-        const target = button.getAttribute('data-target');
-        const form = document.getElementById(target);
-        
-        // Close all other forms
-        document.querySelectorAll('.collapse').forEach(item => {
-          if (item !== form) {
-            item.classList.remove('active');
-            item.style.maxHeight = null;
+      // Accordion buttons for service forms
+      document.querySelectorAll('.accordion-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const target = button.getAttribute('data-target');
+          const form = document.getElementById(target);
+          const isActive = form.classList.contains('active');
+          
+          // Close all other forms
+          document.querySelectorAll('.collapse').forEach(item => {
+            if (item !== form) {
+              item.classList.remove('active');
+              item.style.maxHeight = '0';
+            }
+          });
+          
+          // Toggle current form
+          if (!isActive) {
+            form.classList.add('active');
+            form.style.maxHeight = form.scrollHeight + 'px';
+          } else {
+            form.classList.remove('active');
+            form.style.maxHeight = '0';
           }
         });
-        
-        // Toggle current form
-        form.classList.toggle('active');
-        if (form.classList.contains('active')) {
-          form.style.maxHeight = form.scrollHeight + 'px';
-        } else {
-          form.style.maxHeight = null;
-        }
       });
-    });
 
-    // Scroll animation
-    const scrollElements = document.querySelectorAll('.animate-scroll');
-    const elementInView = (el, offset = 150) => {
-      const elementTop = el.getBoundingClientRect().top;
-      return elementTop <= (window.innerHeight - offset);
-    };
-    
-    const displayScrollElement = (el) => {
-      el.classList.add('active');
-    };
-    
-    const hideScrollElement = (el) => {
-      el.classList.remove('active');
-    };
-    
-    const handleScrollAnimation = () => {
-      scrollElements.forEach(el => {
-        if (elementInView(el, 150)) {
-          displayScrollElement(el);
-        } else {
-          hideScrollElement(el);
-        }
-      });
-    };
-    
-    window.addEventListener('scroll', handleScrollAnimation);
-    
-    // Initialize on load
-    window.addEventListener('load', handleScrollAnimation);
+      // Scroll animation
+      const scrollElements = document.querySelectorAll('.animate-scroll');
+      const elementInView = (el, offset = 150) => {
+        const elementTop = el.getBoundingClientRect().top;
+        return elementTop <= (window.innerHeight - offset);
+      };
+      
+      const displayScrollElement = (el) => {
+        el.classList.add('active');
+      };
+      
+      const hideScrollElement = (el) => {
+        el.classList.remove('active');
+      };
+      
+      const handleScrollAnimation = () => {
+        scrollElements.forEach(el => {
+          if (elementInView(el, 150)) {
+            displayScrollElement(el);
+          }
+        });
+      };
+      
+      window.addEventListener('scroll', handleScrollAnimation);
+      window.addEventListener('load', handleScrollAnimation);
+    });
   </script>
 
 </body>

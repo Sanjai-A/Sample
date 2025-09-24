@@ -472,10 +472,11 @@ nav ul li a.contact-btn:hover {
   font-size: 0.9rem;
 }
 
-/* FAQ Section */
+/* FAQ Section - Fixed */
 .faq {
   padding: 100px 5%;
   text-align: center;
+  background-color: #070e16;
 }
 
 .faq h2 {
@@ -495,6 +496,11 @@ nav ul li a.contact-btn:hover {
   border-radius: 10px;
   background: #1a2432;
   overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item.active {
+  box-shadow: 0 5px 15px rgba(255, 68, 68, 0.3);
 }
 
 .faq-question {
@@ -522,16 +528,17 @@ nav ul li a.contact-btn:hover {
 
 .faq-item.active .faq-question::after {
   transform: rotate(45deg);
+  content: '−';
 }
 
 .faq-question:hover {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease;
+  transition: max-height 0.3s ease;
   background: #0f1721;
 }
 
@@ -539,6 +546,12 @@ nav ul li a.contact-btn:hover {
   padding: 0 20px 20px;
   color: #cccccc;
   line-height: 1.6;
+  margin: 0;
+}
+
+/* Ensure FAQ answers are visible when active */
+.faq-item.active .faq-answer {
+  max-height: 500px; /* Adjust based on your content */
 }
 
 /* Contact Section */

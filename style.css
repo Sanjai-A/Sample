@@ -529,3 +529,52 @@ button:hover, .btn:hover {
   opacity: 1;
   margin-top: 10px;
 }
+/* Animations */
+.animate-slide { 
+  animation: slideIn 1s ease forwards; opacity: 0; 
+}
+@keyframes slideIn {
+  0% { transform: translateX(-100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.animate-fade { 
+  animation: fadeIn 1s ease forwards; opacity: 0; 
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.animate-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255,0,0,0.6);
+}
+
+/* Updated Hero */
+.hero {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  padding-left: 5%;
+}
+
+/* Modern Buttons */
+.btn, button {
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: 0.4s ease;
+}
+
+/* Card Hover */
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255,0,0,0.5);
+}
+
+/* Sections spacing */
+section { padding: 100px 0; }

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Burger Hut</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Hut - Premium B2B Solutions</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <div class="logo">
       <img src="iconlogo.png" alt="Burger Hut Logo">
@@ -16,205 +19,406 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#menu">Menu</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="#" class="nav-link" data-target="reservations">Reservations</a></li>
-        <li><a href="#" class="nav-link" data-target="contact">Contact</a></li>
+        <li><a href="#contact" class="contact-btn">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Hero -->
   <section class="hero" id="home">
     <div class="hero-content">
-      <h1>Welcome to Burger Hut</h1>
-      <p>Experience the Taste of Perfection</p>
-      <a href="#menu" class="btn">Explore Our Menu</a>
+      <h1>Premium Burger Solutions for Businesses</h1>
+      <p>Elevate your corporate dining, events, and partnerships with Burger Hut's premium B2B services</p>
+      <div class="hero-buttons">
+        <a href="#services" class="btn">Our Services</a>
+        <a href="#contact" class="btn btn-outline">Partner With Us</a>
+      </div>
     </div>
   </section>
 
+  <!-- About -->
   <section class="about dark-theme" id="about">
     <div class="about-content">
       <h2>About Burger Hut</h2>
-      <p>Experience the finest gourmet burgers in a cozy and rustic atmosphere. At Burger Hut, we are dedicated to delivering exceptional flavors that will tantalize your taste buds. Our chefs meticulously craft each burger using locally sourced ingredients and unique flavor combinations.</p>
-      <p>Beyond our restaurants, we are a trusted **franchise supplier and a partner to businesses**, providing premium ingredients, corporate catering, and a streamlined B2B experience. Whether you're a customer seeking a great meal or a business looking for a reliable partner, Burger Hut offers quality you can trust.</p>
-      <a href="#menu" class="btn">Explore Our Menu</a>
+      <p>Burger Hut is not just a restaurant – we're a comprehensive food solutions provider for businesses of all sizes. With over 15 years of experience in the food industry, we've expanded our services to cater specifically to corporate clients, franchise partners, and suppliers.</p>
+      
+      <h3>Our B2B Divisions</h3>
+      <div class="divisions">
+        <div class="division">
+          <h4><i class="fas fa-building"></i> Corporate Catering</h4>
+          <p>From executive lunches to company-wide events, our catering services ensure quality food experiences for your team.</p>
+        </div>
+        <div class="division">
+          <h4><i class="fas fa-handshake"></i> Franchise Opportunities</h4>
+          <p>Join our growing network of franchise partners with comprehensive support and proven business models.</p>
+        </div>
+        <div class="division">
+          <h4><i class="fas fa-truck-loading"></i> Supplier Partnerships</h4>
+          <p>We work with quality suppliers to maintain our high standards while supporting local businesses.</p>
+        </div>
+      </div>
+      
+      <a href="#contact" class="btn">Inquire About Partnerships</a>
     </div>
     <div class="about-image">
       <img src="about-image.jpg" alt="About Image">
     </div>
   </section>
 
+  <!-- Menu -->
   <section class="menu" id="menu">
-    <h2>Our Menu</h2>
+    <h2>Our Premium Menu Options</h2>
+    <p class="section-subtitle">Designed for corporate clients with diverse dietary requirements and premium expectations</p>
     <div class="menu-items">
       <div class="menu-item">
         <img src="burger1.jpg" alt="Burger 1">
-        <h3>Classic Cheeseburger</h3>
-        <p>A juicy beef patty topped with melted cheese, fresh lettuce, tomato, and our special sauce. Served with a side of crispy fries.</p>
+        <h3>Executive Classic</h3>
+        <p>Premium Angus beef with artisan cheese selection, gourmet toppings, and signature sauces. Perfect for corporate lunches.</p>
+        <span class="dietary-info">Available in gluten-free bun option</span>
       </div>
       <div class="menu-item">
         <img src="burger2.jpg" alt="Burger 2">
-        <h3>Veggie Delight</h3>
-        <p>A delicious veggie patty made from a blend of fresh vegetables and spices. Topped with avocado, sprouts, and tangy mayo. Served with a side of sweet potato fries.</p>
+        <h3>Plant-Based Professional</h3>
+        <p>Chef-crafted plant-based patty with avocado, specialty greens, and vegan sauces. Ideal for diverse workplace diets.</p>
+        <span class="dietary-info">100% Vegan</span>
       </div>
       <div class="menu-item">
         <img src="burger3.jpg" alt="Burger 3">
-        <h3>Spicy BBQ Burger</h3>
-        <p>A fiery burger packed with flavor! Grilled chicken breast smothered in spicy BBQ sauce, topped with jalapenos, crispy onion rings, and chipotle mayo. Served with a side of coleslaw.</p>
+        <h3>Signature Business Burger</h3>
+        <p>Our most premium offering with wagyu beef, truffle aioli, and gold-leaf brioche bun. For special corporate events.</p>
+        <span class="dietary-info">Premium Selection</span>
       </div>
     </div>
   </section>
 
-  <section class="b2b-content" id="b2b-content">
-    <h2>B2B Services & Partnerships</h2>
-    <div class="b2b-grid">
-      <div class="b2b-item">
-        <h3>Franchise Opportunities</h3>
-        <p>Join the Burger Hut family! We offer a proven business model, extensive training, and ongoing support to help you succeed. Find out how you can become a part of our growing network.</p>
-        <a href="#faq" class="btn">Learn More</a>
-      </div>
-      <div class="b2b-item">
-        <h3>Supplier Partnerships</h3>
-        <p>We believe in quality from the source. We're always looking for reliable and passionate suppliers who can provide the best local ingredients. Let's build a partnership for success.</p>
-        <a href="#faq" class="btn">Partner With Us</a>
-      </div>
-      <div class="b2b-item">
+  <!-- Services -->
+  <section class="services dark-theme" id="services">
+    <h2>Our B2B Services</h2>
+    <p class="section-subtitle">Comprehensive solutions tailored to your business needs</p>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-utensils"></i>
+        </div>
         <h3>Corporate Catering</h3>
-        <p>Impress your clients or treat your team with Burger Hut's corporate catering. We offer customized menus and seamless delivery for events, meetings, and conferences of any size.</p>
-        <a href="#" class="nav-link btn" data-target="contact">Book Catering</a>
+        <p>From board meetings to company picnics, we deliver quality food experiences that impress.</p>
+        <ul>
+          <li>Customizable menus for any event size</li>
+          <li>Dietary requirement accommodations</li>
+          <li>Professional setup and service</li>
+          <li>Regular account management</li>
+        </ul>
+        <button class="accordion-btn" data-target="catering-form">Request Catering Info</button>
+        <div id="catering-form" class="collapse">
+          <form class="service-form">
+            <input type="text" placeholder="Company Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone" required>
+            <textarea placeholder="Event Details" rows="4"></textarea>
+            <button type="submit">Submit Inquiry</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-store"></i>
+        </div>
+        <h3>Franchise Opportunities</h3>
+        <p>Join our successful franchise network with comprehensive support and training.</p>
+        <ul>
+          <li>Proven business model</li>
+          <li>Site selection assistance</li>
+          <li>Marketing and operational support</li>
+          <li>Ongoing training programs</li>
+        </ul>
+        <button class="accordion-btn" data-target="franchise-form">Franchise Inquiry</button>
+        <div id="franchise-form" class="collapse">
+          <form class="service-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone" required>
+            <textarea placeholder="Investment Range & Location Preference" rows="4"></textarea>
+            <button type="submit">Submit Inquiry</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-industry"></i>
+        </div>
+        <h3>Supplier Partnerships</h3>
+        <p>We're always looking for quality suppliers to join our vetted network.</p>
+        <ul>
+          <li>Long-term contracts</li>
+          <li>Fair pricing models</li>
+          <li>Regular quality assessments</li>
+          <li>Growth opportunities</li>
+        </ul>
+        <button class="accordion-btn" data-target="supplier-form">Supplier Application</button>
+        <div id="supplier-form" class="collapse">
+          <form class="service-form">
+            <input type="text" placeholder="Company Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone" required>
+            <textarea placeholder="Products/Services Offered" rows="4"></textarea>
+            <button type="submit">Submit Application</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="faq" id="faq">
+  <!-- Testimonials (B2B) -->
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Business Partners Say</h2>
+    <p class="section-subtitle">Hear from companies that have partnered with Burger Hut</p>
+    <div class="testimonial-container">
+      <div class="testimonial animate-scroll">
+        <div class="testimonial-content">
+          <p>"Burger Hut's corporate catering made our annual conference seamless. Timely delivery, fresh food, and excellent presentation! Their team accommodated our last-minute changes without any issues."</p>
+          <div class="testimonial-author">
+            <h4>ABC Corp.</h4>
+            <span>Events Manager</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial animate-scroll">
+        <div class="testimonial-content">
+          <p>"Partnering with Burger Hut as a supplier has streamlined our operations. Their communication and processes are top-notch. We've grown our business by 40% since becoming their primary produce supplier."</p>
+          <div class="testimonial-author">
+            <h4>Fresh Farms Ltd.</h4>
+            <span>Supplier Partner</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial animate-scroll">
+        <div class="testimonial-content">
+          <p>"Opening a Burger Hut franchise was the best business decision I've made. The support from corporate, the training programs, and the brand recognition have all contributed to our success."</p>
+          <div class="testimonial-author">
+            <h4>Metro Burgers Inc.</h4>
+            <span>Franchise Owner</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ (B2B) -->
+  <section class="faq dark-theme" id="faq">
     <h2>Frequently Asked Questions</h2>
-    <div class="faq-container animate-scroll">
-      <div class="faq-item">
-        <button class="faq-question">1. How can I become a supplier for Burger Hut?</button>
+    <p class="section-subtitle">Get answers to common questions about our B2B services</p>
+    <div class="faq-container">
+      <div class="faq-item animate-scroll">
+        <button class="faq-question">1. How can I place a bulk corporate order?</button>
         <div class="faq-answer">
-          <p>We’re always seeking quality partners. Please fill out our supplier inquiry form on the contact page, and our procurement team will review your application and get in touch to discuss potential partnerships.</p>
+          <p>You can place bulk orders via our Corporate Catering form or contact our dedicated corporate team directly at corporate@burgerhut.com. We'll assign an account manager to handle your specific requirements.</p>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question">2. What are the requirements for a Burger Hut franchise?</button>
+      <div class="faq-item animate-scroll">
+        <button class="faq-question">2. Do you provide delivery for corporate events?</button>
         <div class="faq-answer">
-          <p>Franchise requirements include a minimum liquid capital and net worth, along with a passion for our brand. Submit a franchise inquiry through the contact form, and we'll provide detailed information on the process.</p>
+          <p>Yes, we provide timely delivery for offices, events, and conferences with setup options available upon request. Our delivery radius extends up to 50 miles from any of our locations.</p>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question">3. Do you offer corporate catering for large events?</button>
+      <div class="faq-item animate-scroll">
+        <button class="faq-question">3. How can I become a supplier for Burger Hut?</button>
         <div class="faq-answer">
-          <p>Yes! We specialize in corporate catering for events of all sizes. We can customize a menu to fit your needs and provide timely delivery and setup. Contact us to get a personalized quote for your next event.</p>
+          <p>Register through our Supplier Portal form. Our procurement team will review your application and contact you within 5 business days. We prioritize local and sustainable suppliers.</p>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question">4. Where can I find a list of your B2B services?</button>
+      <div class="faq-item animate-scroll">
+        <button class="faq-question">4. How do I inquire about franchise opportunities?</button>
         <div class="faq-answer">
-          <p>Our B2B services include franchise opportunities, supplier partnerships, and corporate catering. More details are available in the 'B2B Services' section on this page and through our contact forms.</p>
+          <p>Submit the Franchise Inquiry form and our Business Development team will contact you to discuss the next steps. We require a minimum net worth of $500,000 and liquid assets of $150,000.</p>
+        </div>
+      </div>
+      <div class="faq-item animate-scroll">
+        <button class="faq-question">5. What regions are you currently expanding into?</button>
+        <div class="faq-answer">
+          <p>We're currently focusing franchise expansion in the Midwest and Southeast regions. For corporate catering, we're expanding our services to all major metropolitan areas nationwide.</p>
+        </div>
+      </div>
+      <div class="faq-item animate-scroll">
+        <button class="faq-question">6. Do you offer customized menus for dietary restrictions?</button>
+        <div class="faq-answer">
+          <p>Absolutely. We can accommodate various dietary needs including gluten-free, vegan, vegetarian, keto, and allergy-specific requirements. Our chefs will work with you to create the perfect menu.</p>
+        </div>
+      </div>
+      <div class="faq-item animate-scroll">
+        <button class="faq-question">7. What support do you provide to franchisees?</button>
+        <div class="faq-answer">
+          <p>Our franchise support includes comprehensive training, marketing assistance, operational guidance, site selection help, and ongoing business consultation. We're committed to your success.</p>
+        </div>
+      </div>
+      <div class="faq-item animate-scroll">
+        <button class="faq-question">8. How far in advance should I book corporate catering?</button>
+        <div class="faq-answer">
+          <p>We recommend booking at least 2 weeks in advance for optimal planning. For large events (100+ people), 4-6 weeks is ideal. We do accommodate last-minute requests when possible.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <div id="hidden-sections">
-    <section class="reservations hidden-section" id="reservations">
-      <div class="reservation-form">
-        <h2>Make a Reservation</h2>
-        <form>
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <input type="tel" name="phone" placeholder="Phone Number" required>
-          <input type="date" name="date" required>
-          <input type="time" name="time" required>
-          <textarea name="message" placeholder="Additional Message" rows="5"></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </section>
-
-    <section class="contact hidden-section" id="contact">
-      <div class="contact-container">
-        <h2>Contact Us</h2>
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <h2>Contact Our Business Team</h2>
+      <p class="section-subtitle">Ready to partner with Burger Hut? Get in touch with our specialized business divisions</p>
+      
+      <div class="contact-grid">
         <div class="contact-info">
-          <div class="info-item"><i class="fas fa-map-marker-alt"></i><p>123 Main Street, City, Country</p></div>
-          <div class="info-item"><i class="fas fa-phone-alt"></i><p>+1 234 567 890</p></div>
-          <div class="info-item"><i class="fas fa-envelope"></i><p>info@burgerhut.com</p></div>
+          <div class="info-card">
+            <h3><i class="fas fa-utensils"></i> Corporate Catering</h3>
+            <p>Email: catering@burgerhut.com</p>
+            <p>Phone: +1 (800) 123-CATER</p>
+          </div>
+          <div class="info-card">
+            <h3><i class="fas fa-store"></i> Franchise Opportunities</h3>
+            <p>Email: franchise@burgerhut.com</p>
+            <p>Phone: +1 (800) 123-FRANCHISE</p>
+          </div>
+          <div class="info-card">
+            <h3><i class="fas fa-industry"></i> Supplier Partnerships</h3>
+            <p>Email: procurement@burgerhut.com</p>
+            <p>Phone: +1 (800) 123-SUPPLIER</p>
+          </div>
         </div>
+        
         <form class="contact-form">
+          <h3>Send Us a Message</h3>
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
+          <select name="inquiry-type" required>
+            <option value="">Select Inquiry Type</option>
+            <option value="catering">Corporate Catering</option>
+            <option value="franchise">Franchise Opportunity</option>
+            <option value="supplier">Supplier Partnership</option>
+            <option value="other">Other</option>
+          </select>
           <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
           <button type="submit">Send Message</button>
         </form>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
-      <div class="footer-logo"><img src="iconlogo.png" alt="Logo"></div>
-      <nav class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#faq">FAQ</a>
-        <a href="#" class="nav-link" data-target="reservations">Reservations</a>
-        <a href="#" class="nav-link" data-target="contact">Contact</a>
-      </nav>
-      <div class="footer-social">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+      <div class="footer-logo">
+        <img src="iconlogo.png" alt="Logo">
+        <p>Premium Burger Solutions for Businesses</p>
+      </div>
+      <div class="footer-links">
+        <div class="link-group">
+          <h4>Services</h4>
+          <a href="#services">Corporate Catering</a>
+          <a href="#services">Franchise Opportunities</a>
+          <a href="#services">Supplier Partnerships</a>
+        </div>
+        <div class="link-group">
+          <h4>Company</h4>
+          <a href="#about">About Us</a>
+          <a href="#menu">Our Menu</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="link-group">
+          <h4>Connect</h4>
+          <a href="#contact">Contact</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Newsletter</a>
+        </div>
       </div>
     </div>
-    <p class="footer-text">&copy; 2023 Burger Hut. All rights reserved.</p>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Burger Hut B2B Solutions. All rights reserved.</p>
+    </div>
   </footer>
 
+  <!-- JavaScript -->
   <script>
-    // FAQ Accordion
-    const faqQuestions = document.querySelectorAll('.faq-question');
-    faqQuestions.forEach(question => {
-      question.addEventListener('click', () => {
-        const answer = question.nextElementSibling;
-        const parent = question.parentElement;
-        parent.classList.toggle('active');
-        if (answer.style.display === "block") {
-          answer.style.display = "none";
+    // FAQ functionality
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const answer = faqItem.querySelector('.faq-answer');
+        
+        // Close all other FAQ items
+        document.querySelectorAll('.faq-item').forEach(item => {
+          if (item !== faqItem) {
+            item.classList.remove('active');
+            item.querySelector('.faq-answer').style.maxHeight = null;
+          }
+        });
+        
+        // Toggle current FAQ item
+        faqItem.classList.toggle('active');
+        if (faqItem.classList.contains('active')) {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
         } else {
-          answer.style.display = "block";
+          answer.style.maxHeight = null;
         }
       });
     });
 
-    // Toggle hidden sections
-    const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('.hidden-section');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute('data-target');
-            const targetSection = document.getElementById(targetId);
-
-            sections.forEach(section => {
-                section.style.display = 'none';
-            });
-
-            if (targetSection) {
-                targetSection.style.display = 'block';
-                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+    // Accordion buttons for service forms
+    document.querySelectorAll('.accordion-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const target = button.getAttribute('data-target');
+        const form = document.getElementById(target);
+        
+        // Close all other forms
+        document.querySelectorAll('.collapse').forEach(item => {
+          if (item !== form) {
+            item.classList.remove('active');
+            item.style.maxHeight = null;
+          }
         });
+        
+        // Toggle current form
+        form.classList.toggle('active');
+        if (form.classList.contains('active')) {
+          form.style.maxHeight = form.scrollHeight + 'px';
+        } else {
+          form.style.maxHeight = null;
+        }
+      });
     });
 
-    // Scroll Animation
+    // Scroll animation
     const scrollElements = document.querySelectorAll('.animate-scroll');
-    const elementInView = (el, offset = 150) => el.getBoundingClientRect().top <= (window.innerHeight - offset);
-    const displayScrollElement = (el) => el.classList.add('active');
-    const hideScrollElement = (el) => el.classList.remove('active');
-    const handleScrollAnimation = () => {
-      scrollElements.forEach(el => elementInView(el, 150) ? displayScrollElement(el) : hideScrollElement(el));
+    const elementInView = (el, offset = 150) => {
+      const elementTop = el.getBoundingClientRect().top;
+      return elementTop <= (window.innerHeight - offset);
     };
+    
+    const displayScrollElement = (el) => {
+      el.classList.add('active');
+    };
+    
+    const hideScrollElement = (el) => {
+      el.classList.remove('active');
+    };
+    
+    const handleScrollAnimation = () => {
+      scrollElements.forEach(el => {
+        if (elementInView(el, 150)) {
+          displayScrollElement(el);
+        } else {
+          hideScrollElement(el);
+        }
+      });
+    };
+    
     window.addEventListener('scroll', handleScrollAnimation);
+    
+    // Initialize on load
+    window.addEventListener('load', handleScrollAnimation);
   </script>
 
 </body>
